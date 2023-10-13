@@ -9,7 +9,7 @@ import frontImg from "../img/frontImg.jpg";
 import "../style/pages/fleetPage.css";
 
 export default function FleetPage(): JSX.Element {
-  const { selectedClass, setSelectedClass } = useContext(AppContext);
+  const { language, selectedClass, setSelectedClass } = useContext(AppContext);
 
   const carList: Cars[] = carData();
   const translations: Translate = Translations();
@@ -53,7 +53,7 @@ export default function FleetPage(): JSX.Element {
               </div>
               <div>Model: {car.model}</div>
               <div>
-                {translations.power}: {car.power} hp
+                {translations.power}: {car.power} {language === `en` ? `hp` : `KS`}
               </div>
               <div>
                 {translations.engine}: {car.engine}
