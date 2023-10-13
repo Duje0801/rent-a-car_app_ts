@@ -1,0 +1,175 @@
+.frontFr {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.frontImageFr {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: auto;
+  min-width: calc(100vw + 250px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-250px);
+  z-index: -2;
+}
+
+.selectionFr {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 75vw;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(31, 101, 33, 0.9);
+  padding: 15px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+  color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .selectionFr {
+    position: absolute;
+    width: 40vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+  }
+}
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
+  .selectionFr {
+    padding: 5px;
+  }
+}
+.selectionTitleFr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .selectionTitleFr {
+    flex-direction: row;
+    font-size: 3rem;
+    gap: 15px;
+  }
+}
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
+  .selectionTitleFr {
+    flex-direction: row;
+    font-size: 1.5rem;
+  }
+}
+.selectionLogoFr {
+  width: 150px;
+}
+
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
+  .selectionLogoFr {
+    width: 75px;
+  }
+}
+.formWarningFr {
+  width: calc(70vw + 4px);
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px auto auto auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .formWarningFr {
+    width: calc(35vw + 4px);
+  }
+}
+.formRowFr {
+  font-weight: bold;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .formRowFr {
+    font-size: 1.5rem;
+  }
+}
+.pickUpDropOffLocationFr {
+  width: calc(70vw + 4px);
+  border: 0px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .pickUpDropOffLocationFr {
+    width: calc(35vw + 4px);
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+.datePickerFr {
+  width: 70vw;
+  padding: 1px 2px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .datePickerFr {
+    font-size: 1.5rem;
+    width: 35vw;
+    cursor: pointer;
+  }
+}
+.selectionBtnBoxFr {
+  display: flex;
+  justify-content: center;
+}
+
+.selectionBtnFr {
+  background-color: #1f2605;
+  color: white;
+  font-size: 1.5rem;
+  padding: 5px;
+  width: calc(70vw + 4px);
+  margin-top: 5px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .selectionBtnFr {
+    width: calc(35vw + 4px);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-height: 575px) and (max-width: 1024px) {
+  .selectionBtnFr {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .react-datepicker__month {
+    margin: 0px;
+  }
+  .react-datepicker__day-name {
+    margin: 0px;
+  }
+  .react-datepicker__day {
+    margin: 0px;
+  }
+}/*# sourceMappingURL=front.css.map */

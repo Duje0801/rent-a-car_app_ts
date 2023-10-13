@@ -1,0 +1,161 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.tmT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto $gapS auto;
+  gap: $gapS;
+}
+
+@media only screen and (min-width: 768px) {
+  .tmT {
+    margin: $gap auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .tmT {
+    gap: $gap;
+  }
+}
+
+.titleT {
+  font-size: $fontS;
+  color: $green2;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleT {
+    font-size: $fontM;
+  }
+}
+
+.allBoxesT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centralBoxAndArrowsT {
+  display: flex;
+}
+
+.boxCentralT {
+  width: 60vw;
+  height: 250px;
+  background-color: $green2;
+  padding: $gapS;
+  font-size: $fontXXS;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 768px) {
+  .boxCentralT {
+    width: 35vw;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .boxCentralT {
+    font-size: $fontXS;
+    height: 300px;
+    width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1830px) {
+  .boxCentralT {
+    width: 20vw;
+  }
+}
+
+.arrowBoxT {
+  margin: auto 0px;
+}
+
+.arrowT {
+  font-size: $fontL;
+}
+
+@media only screen and (min-width: 768px) {
+  .arrowT {
+    font-size: $fontM;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .arrowT {
+    cursor: pointer;
+  }
+}
+
+
+.boxSideT {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .boxSideT {
+    width: 20vw;
+    height: 175px;
+    background-color: $green2;
+    padding: $gapXS;
+    font-size: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    position: relative;
+    margin: auto $gapS;
+    border: $border;
+    border-radius: $gapXS;
+    filter: blur(5px);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .boxSideT {
+    width: 17.5vw;
+    height: 200px;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 1830px) {
+  .boxSideT {
+    width: 12vw;
+  }
+}
+
+.boxCustomerInfoT {
+  position: absolute;
+  bottom: $gapXS;
+  right: $gapXS;
+}

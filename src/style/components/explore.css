@@ -1,0 +1,78 @@
+.exploreE {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .exploreE {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0px;
+  }
+}
+.titleE {
+  font-size: 2rem;
+  color: #1f6521;
+  font-weight: bold;
+}
+
+.exploreDivsE {
+  display: flex;
+  gap: 30px;
+}
+
+.exploreBoxE {
+  width: 22.5vw;
+  position: relative;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1830px) {
+  .exploreBoxE {
+    width: 17.5vw;
+  }
+}
+.exploreImgE {
+  width: 22.5vw;
+  height: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1830px) {
+  .exploreImgE {
+    width: 17.5vw;
+  }
+}
+.exploreTextE {
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  padding: 15px;
+  font-size: 0.6rem;
+  background-color: rgba(31, 101, 33, 0.8);
+  color: white;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .exploreTextE {
+    font-size: 1rem;
+  }
+}
+.exploreImgE:hover ~ .exploreTextE {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.exploreTextE:hover {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}/*# sourceMappingURL=explore.css.map */

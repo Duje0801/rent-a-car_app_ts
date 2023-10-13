@@ -1,0 +1,136 @@
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.frontL {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.frontImageL {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: auto;
+  min-width: calc(100vw + 250px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-250px);
+  z-index: -2;
+}
+
+.locationsL {
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 90vw;
+  background-color: rgba(83, 144, 15, 0.8);
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .locationsL {
+    width: 60vw;
+  }
+}
+.locationsL > div:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.locationsDisplayL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+  background-color: #1f6521;
+  border: 2px solid #1f2605;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationsDisplayL {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .locationsDisplayL {
+    display: grid;
+    grid-template-columns: 30% 60%;
+  }
+}
+.locationsListL {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationsListL > li {
+    padding: 5px 0px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .locationsListL > li {
+    padding: 5px 0px;
+    cursor: pointer;
+  }
+  .locationsListL > li:hover {
+    color: #1f2605;
+  }
+}
+.locationTitleL {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.locationToDisplayL {
+  background-color: #53900f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationToDisplayL {
+    padding: 15px;
+  }
+}
+.locationAdressL {
+  text-align: center;
+  font-size: 0.75rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationAdressL {
+    font-size: 1rem;
+  }
+}
+.locationLinkL {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationLinkL {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=locations.css.map */

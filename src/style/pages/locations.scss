@@ -1,0 +1,154 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.frontL {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.frontImageL {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: auto;
+  min-width: calc(100vw + 250px);
+  object-fit: cover;
+  transform: translate(-250px);
+  z-index: -2;
+}
+
+.locationsL {
+  position: absolute;
+  height: fit-content;
+  width: 90vw;
+  background-color: rgba($green3, 0.8);
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: $gapXS;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 1024px) {
+  .locationsL {
+    width: 60vw;
+  }
+}
+
+.locationsL > div:nth-child(1) {
+  font-size: $fontM;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.locationsDisplayL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $gapXS;
+  padding: $gapXS;
+  background-color: $green2;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationsDisplayL {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: $gapS;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .locationsDisplayL {
+    display: grid;
+    grid-template-columns: 30% 60%;
+  }
+}
+
+.locationsListL {
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationsListL > li {
+    padding: $gapXS 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .locationsListL > li {
+    padding: $gapXS 0px;
+    cursor: pointer;
+  }
+
+  .locationsListL > li:hover {
+    color: $green1;
+  }
+}
+
+.locationTitleL {
+  font-size: $fontS;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.locationToDisplayL {
+  background-color: $green3;
+  padding: $gapXS;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationToDisplayL {
+    padding: $gapS;
+  }
+}
+
+.locationAdressL {
+  text-align: center;
+  font-size: $fontXXS;
+  margin-bottom: $gapXS;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationAdressL {
+    font-size: $fontXS;
+  }
+}
+
+.locationLinkL {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .locationLinkL {
+    cursor: pointer;
+  }
+}

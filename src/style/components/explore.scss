@@ -1,0 +1,96 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.exploreE {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .exploreE {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+    margin: $gap 0px;
+  }
+}
+
+.titleE {
+  font-size: $fontM;
+  color: $green2;
+  font-weight: bold;
+}
+
+.exploreDivsE {
+  display: flex;
+  gap: $gap;
+}
+
+.exploreBoxE {
+  width: 22.5vw;
+  position: relative;
+  border: $border;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 1830px) {
+  .exploreBoxE {
+    width: 17.5vw;
+  }
+}
+
+.exploreImgE {
+  width: 22.5vw;
+  height: 100%;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 1830px) {
+  .exploreImgE {
+    width: 17.5vw;
+  }
+}
+
+.exploreTextE {
+  display: none;
+  position: absolute;
+  top: $gapS;
+  left: $gapS;
+  right: $gapS;
+  bottom: $gapS;
+  padding: $gapS;
+  font-size: 0.6rem;
+  background-color: rgba($green2, 0.8);
+  color: white;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 1400px) {
+  .exploreTextE {
+    font-size: $fontXS;
+  }
+}
+
+.exploreImgE:hover ~ .exploreTextE {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+
+.exploreTextE:hover {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}

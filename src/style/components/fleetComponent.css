@@ -1,0 +1,149 @@
+.fleetFC {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fleetFC {
+    gap: 15px;
+  }
+}
+.titleFC {
+  font-size: 1.5rem;
+  color: #1f6521;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleFC {
+    font-size: 2rem;
+  }
+}
+.carSelectionFC {
+  display: flex;
+  gap: 15px;
+}
+
+.carDisplayFC {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .carDisplayFC {
+    display: block;
+    color: #1f6521;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .carDisplayFC {
+    font-size: 1.5rem;
+  }
+}
+.carImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 125px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .carImgBoxFC {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .carImgBoxFC {
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .carImgBoxFC {
+    height: 200px;
+  }
+}
+.carImgFC {
+  width: 15vw;
+  margin: auto;
+}
+
+.respCarSelectionFC {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .respCarSelectionFC {
+    display: none;
+  }
+}
+.respCarDisplayFC {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.respCarDisplayFC > div:first-child {
+  color: #1f6521;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.respCarImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 185px;
+  margin: auto;
+}
+
+.respCarImgFC {
+  width: 50vw;
+}
+
+.arrowBoxFC {
+  display: none;
+}
+
+.arrowFC {
+  font-size: 2rem;
+}
+
+.seeMoreFC {
+  background-color: #1f6521;
+  color: white;
+  font-size: 1rem;
+  border: 2px solid #1f2605;
+  width: calc(70vw + 4px);
+  padding: 5px 0px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .seeMoreFC {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 30px;
+    border: 2px solid white;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .seeMoreFC {
+    cursor: pointer;
+  }
+  .seeMoreFC:hover {
+    border: 2px solid #1f2605;
+  }
+}/*# sourceMappingURL=fleetComponent.css.map */

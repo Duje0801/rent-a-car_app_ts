@@ -1,0 +1,171 @@
+$green1: #1f2605;
+$green2: #1f6521;
+$green3: #53900f;
+$fontXXS: 0.75rem;
+$fontXS: 1rem;
+$fontS: 1.5rem;
+$fontM: 2rem;
+$fontL: 3rem;
+$fontXL: 4rem;
+$gapXS: 5px;
+$gapS: 15px;
+$gap: 30px;
+$border: 2px solid $green1;
+
+.fleetFC {
+  display: flex;
+  width: fit-content;
+  gap: $gapXS;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: $gap auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .fleetFC {
+    gap: $gapS;
+  }
+}
+
+.titleFC {
+  font-size: $fontS;
+  color: $green2;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleFC {
+    font-size: $fontM;
+  }
+}
+
+.carSelectionFC {
+  display: flex;
+  gap: $gapS;
+}
+
+.carDisplayFC {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .carDisplayFC {
+    display: block;
+    color: $green2;
+    font-size: $fontXS;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .carDisplayFC {
+    font-size: $fontS;
+  }
+}
+
+.carImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 125px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .carImgBoxFC {
+    height: 130px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .carImgBoxFC {
+    height: 150px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .carImgBoxFC {
+    height: 200px;
+  }
+}
+
+.carImgFC {
+  width: 15vw;
+  margin: auto;
+}
+
+.respCarSelectionFC {
+  display: flex;
+  justify-content: center;
+  margin: $gapXS;
+}
+
+@media only screen and (min-width: 768px) {
+  .respCarSelectionFC {
+    display: none;
+  }
+}
+
+.respCarDisplayFC {
+  display: flex;
+  flex-direction: column;
+  gap: $gapS;
+}
+
+.respCarDisplayFC > div:first-child {
+  color: $green2;
+  font-size: $fontXS;
+  text-align: center;
+  font-weight: bold;
+}
+
+.respCarImgBoxFC {
+  display: flex;
+  align-items: center;
+  height: 185px;
+  margin: auto;
+}
+
+.respCarImgFC {
+  width: 50vw;
+}
+
+.arrowBoxFC {
+  display: none;
+}
+
+.arrowFC {
+  font-size: $fontM;
+}
+
+.seeMoreFC {
+  background-color: $green2;
+  color: white;
+  font-size: $fontXS;
+  border: $border;
+  width: calc(70vw + 4px);
+  padding: $gapXS 0px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+  border-radius: $gapXS;
+}
+
+@media only screen and (min-width: 768px) {
+  .seeMoreFC {
+    width: fit-content;
+    padding: $gapXS $gap;
+    border: 2px solid white;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .seeMoreFC {
+    cursor: pointer;
+  }
+
+  .seeMoreFC:hover {
+    border: 2px solid $green1;
+  }
+}
