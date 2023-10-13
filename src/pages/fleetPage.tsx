@@ -8,7 +8,7 @@ import Translations from "../data/translations";
 import frontImg from "../img/frontImg.jpg";
 import "../style/pages/fleetPage.css";
 
-export default function FleetPage() {
+export default function FleetPage(): JSX.Element {
   const { selectedClass, setSelectedClass } = useContext(AppContext);
 
   const carList: Cars[] = carData();
@@ -71,7 +71,7 @@ export default function FleetPage() {
     <div>
       <div className="frontFP">
         <Navigation />
-        <img src={frontImg} alt="frontImage" className="frontImageFP" />
+        <img src={frontImg} alt="front image" className="frontImageFP" />
         <div className="fleetFP">
           <div>{translations.fleet}</div>
           {mappedCarList}

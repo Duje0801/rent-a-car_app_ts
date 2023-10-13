@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import FleetPage from "./pages/fleetPage";
+import Locations from "./pages/locations";
 import { routes } from "./routes/routes";
 
 function App(): JSX.Element {
@@ -12,6 +13,10 @@ function App(): JSX.Element {
     {
       path: routes.fleet,
       element: <FleetPage />,
+    },
+    {
+      path: routes.locations,
+      element: <Locations />,
     },
     {
       path: "*",
