@@ -1,6 +1,7 @@
 import { GrFacebook, GrInstagram, GrTwitter } from "react-icons/gr";
 import Navigation from "../components/navigation";
 import Translations from "../data/translations";
+import Chat from "../components/chat";
 import frontImg from "../img/frontImg.jpg";
 import "../style/pages/contact.css";
 
@@ -45,6 +46,7 @@ export default function Contact(): JSX.Element {
           </div>
         </div>
       </div>
+      <Chat />
     </div>
   );
 }

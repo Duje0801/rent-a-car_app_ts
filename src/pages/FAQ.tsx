@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navigation from "../components/navigation";
+import Chat from "../components/chat";
 import QuestionsData from "../data/questionsData";
 import AnswersData from "../data/answersData";
 import Translations from "../data/translations";
@@ -44,6 +45,7 @@ export default function FAQ(): JSX.Element {
           <div>{mappedQuestions}</div>
         </div>
       </div>
+      <Chat />
     </div>
   );
 }

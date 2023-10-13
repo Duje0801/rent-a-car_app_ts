@@ -9,6 +9,7 @@ import Logo2 from "../components/logo2";
 import TestimonialsComponent from "../components/testimotionalsComponent";
 import Footer from "../components/footer";
 import Reservation from "./reservation";
+import Chat from "../components/chat";
 import "../style/index.css";
 
 export default function Home(): JSX.Element {
@@ -18,14 +19,17 @@ export default function Home(): JSX.Element {
   else
     return (
       <>
-        <Navigation />
-        <Front />
-        <FleetComponent />
-        <Logo1 />
-        <ExploreComponent />
-        <Logo2 />
-        <TestimonialsComponent />
-        <Footer />
+        <div>
+          <Navigation />
+          <Front />
+          <FleetComponent />
+          <Logo1 />
+          <ExploreComponent />
+          <Logo2 />
+          <TestimonialsComponent />
+          <Footer />
+        </div>
+        <Chat />
       </>
     );
 }

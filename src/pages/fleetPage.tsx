@@ -3,6 +3,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { AppContext } from "../context/context";
 import { Cars, Translate } from "../interfaces/interfaces";
 import Navigation from "../components/navigation";
+import Chat from "../components/chat";
 import carData from "../data/carData";
 import Translations from "../data/translations";
 import frontImg from "../img/frontImg.jpg";
@@ -53,7 +54,8 @@ export default function FleetPage(): JSX.Element {
               </div>
               <div>Model: {car.model}</div>
               <div>
-                {translations.power}: {car.power} {language === `en` ? `hp` : `KS`}
+                {translations.power}: {car.power}{" "}
+                {language === `en` ? `hp` : `KS`}
               </div>
               <div>
                 {translations.engine}: {car.engine}
@@ -77,6 +79,7 @@ export default function FleetPage(): JSX.Element {
           {mappedCarList}
         </div>
       </div>
+      <Chat />
     </div>
   );
 }

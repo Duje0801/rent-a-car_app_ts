@@ -1,6 +1,7 @@
 import Navigation from "../components/navigation";
 import Translations from "../data/translations";
 import { Translate } from "../interfaces/interfaces";
+import Chat from "../components/chat";
 import frontImg from "../img/frontImg.jpg";
 import "../style/pages/aboutUs.css";
 
@@ -22,6 +23,7 @@ export default function AboutUs(): JSX.Element {
           </div>
         </div>
       </div>
+      <Chat />
     </div>
   );
 }

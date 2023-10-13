@@ -17,8 +17,8 @@ interface ContextObject {
   setIsReservationPage: Dispatch<SetStateAction<boolean>>;
   selectedClass: number;
   setSelectedClass: Dispatch<SetStateAction<number>>;
-  messageList: object[];
-  setMessageList: Dispatch<SetStateAction<object[]>>;
+  messageList: string[];
+  setMessageList: Dispatch<SetStateAction<string[]>>;
 }
 
 export const AppContext = createContext<ContextObject>({} as ContextObject);
@@ -30,7 +30,7 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
   );
   const [isReservationPage, setIsReservationPage] = useState<boolean>(false);
   const [selectedClass, setSelectedClass] = useState<number>(2);
-  const [messageList, setMessageList] = useState<object[]>([]);
+  const [messageList, setMessageList] = useState<string[]>([]);
 
   return (
     <AppContext.Provider

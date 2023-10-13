@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "../components/navigation";
 import LocationsData from "../data/locationsData";
+import Chat from "../components/chat";
 import Translations from "../data/translations";
 import { Cities, Translate } from "../interfaces/interfaces";
 import frontImg from "../img/frontImg.jpg";
@@ -50,6 +51,7 @@ export default function Locations(): JSX.Element {
           </div>
         </div>
       </div>
+      <Chat />
     </div>
   );
 }
