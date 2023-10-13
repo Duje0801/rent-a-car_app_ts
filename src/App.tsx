@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import FleetPage from "./pages/fleetPage";
 import Locations from "./pages/locations";
+import AboutUs from "./pages/aboutUs";
 import { routes } from "./routes/routes";
 
 function App(): JSX.Element {
@@ -17,6 +18,10 @@ function App(): JSX.Element {
     {
       path: routes.locations,
       element: <Locations />,
+    },
+    {
+      path: routes.aboutUs,
+      element: <AboutUs />,
     },
     {
       path: "*",

@@ -96,4 +96,8 @@ export interface Translate {
   mediumClass: string;
   higherClass: string;
   luxuryClass: string;
+  aboutUs1: string;
+  aboutUs2: string;
+  aboutUs3: string;
+  aboutUs4: string;
 }

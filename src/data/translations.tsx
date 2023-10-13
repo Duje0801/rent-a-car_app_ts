@@ -66,6 +66,16 @@ function Translations(): Translate {
       mediumClass: `Medium class`,
       higherClass: `Higher class`,
       luxuryClass: `Luxury class`,
+      aboutUs1: `Oldtimer Rent-A-Car is a Croatian car rental company that was founded in 2015
+      with its first location in Split.`,
+      aboutUs2: `The company specializes in providing classic and vintage
+      cars for rental, catering to customers who are looking for a unique driving experience on
+      the scenic roads of Croatia.`,
+      aboutUs3: `Since its inception, Oldtimer Rent-A-Car has expanded to five locations throughout Croatia,
+      including Dubrovnik, Zagreb, Zadar, and Pula.`,
+      aboutUs4: `The company's fleet of well-maintained classic
+      cars and professional customer service has made it a popular choice for both tourists and
+      locals looking to explore Croatia in style.`,
     };
   else
     translations = {
@@ -126,6 +136,16 @@ function Translations(): Translate {
       mediumClass: `Srednja klasa`,
       higherClass: `Viša klasa`,
       luxuryClass: `Luksuzna klasa`,
+      aboutUs1: `Oldtimer Rent-A-Car je tvrtka za iznajmljivanje automobila osnovana 2015. Splitu.`,
+      aboutUs2: `Tvrtka je specijalizirana za iznajmljivanje oldtimer automobila 
+      kupcima koji traže jedinstveno iskustvo vožnje cestama Hrvatske.`,
+      aboutUs3: `Od svog osnutka Oldtimer Rent-A-Car proširio se na ukupno pet lokacija diljem Hrvatske.
+      Osim početne lokacije u Splitu, tvrtka posluje i u Dubrovniku, Zagrebu, Zadru i Puli.
+      `,
+      aboutUs4: `Osim dobro održavanih oldtimer
+      automobila u tvrtki radi i profesionalna služba za korisnike koja je "Oldtimer" Rent-a-car učinila 
+      popularnim izborom i za turiste i za lokalno stanovništvo koje želi istražiti Hrvatsku sa stilom.
+      `,
     };
 
   return translations;
