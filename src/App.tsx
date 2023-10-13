@@ -4,6 +4,7 @@ import FleetPage from "./pages/fleetPage";
 import Locations from "./pages/locations";
 import AboutUs from "./pages/aboutUs";
 import FAQ from "./pages/FAQ";
+import Contact from "./pages/contact";
 import { routes } from "./routes/routes";
 
 function App(): JSX.Element {
@@ -27,6 +28,10 @@ function App(): JSX.Element {
     {
       path: routes.FAQ,
       element: <FAQ />,
+    },
+    {
+      path: routes.contact,
+      element: <Contact />,
     },
     {
       path: "*",
