@@ -76,6 +76,21 @@ function Translations(): Translate {
       aboutUs4: `The company's fleet of well-maintained classic
       cars and professional customer service has made it a popular choice for both tourists and
       locals looking to explore Croatia in style.`,
+      question1: `What documents do I need to rent a car?`,
+      question2: `Can I rent a car if I'm under 25 years old?`,
+      question3: `What's included in the rental price?`,
+      question4: `What should I do if I have an accident or the car breaks down?`,
+      answer1: `You will need a valid driver's license, a credit card in your name, and
+      sometimes proof of insurance.`,
+      answer2: `        "Oldtimer" Rent-a-car have age restriction and require driver to be at
+      least 25 years old.`,
+      answer3: `Rental prices typically include the cost of the car, insurance coverage,
+      and any applicable taxes and fees. However, additional options such as
+      additional driver may incur additional charges.`,
+      answer4: `In the event of an accident, you must contact us immediately and follow
+      instructions. If the car breaks down, we offer roadside assistance, so
+      you should call the provided number for help. It's important to
+      familiarize yourself with the rental company's policies and procedures.`,
     };
   else
     translations = {
@@ -146,6 +161,21 @@ function Translations(): Translate {
       automobila u tvrtki radi i profesionalna služba za korisnike koja je "Oldtimer" Rent-a-car učinila 
       popularnim izborom i za turiste i za lokalno stanovništvo koje želi istražiti Hrvatsku sa stilom.
       `,
+      question1: `Koje dokumente trebam za najam automobila?`,
+      question2: `Mogu li iznajmiti automobil ako imam manje od 25 godina?`,
+      question3: `Što je uključeno u cijenu najma?`,
+      question4: `Što trebam učiniti ako imam nesreću ili se automobil pokvari?`,
+      answer1: ` Trebati će vam valjana vozačka dozvola, kreditna kartica na vaše ime i
+      može zatrebati dokaz o osiguranju.`,
+      answer2: `        "Oldtimer" Rent-a-car ima ograničenje starosti i zahtijeva da vozač bude
+      barem 25 godina star.`,
+      answer3: `Cijena najma obično uključuje troškove najma automobila, osiguranje, te
+      sve primjenjive poreze i naknade. Međutim, dodatne opcije poput dodatnog
+      vozača mogu dovesti do dodatnih troškova.`,
+      answer4: ` U slučaju nesreće, morate nas odmah kontaktirati i slijediti upute. Ako
+      se automobil pokvari, nudimo pomoć na cesti, pa biste trebali nazvati
+      pruženi broj za pomoć. Važno je upoznati se s politikama i postupcima
+      rent-a-car tvrtke.`,
     };
 
   return translations;
